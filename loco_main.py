@@ -177,7 +177,7 @@ async def live_handling():
 loop = asyncio.get_event_loop()
 
 loop.create_task(bot.start("NjgwNDMwMTM2NzA4ODI1MTUx.XlVNPw.SLpc_DzD-FqLb1q0itpzhd2aibM"))
-loop.create_task(client.start('NDg3MjcwMDczMzM4Mjk4MzY4.SZVGizEac0YxvADxRqqKg6Ua_XQ',bot=False))
+loop.create_task(client.start('NDg3MjcwMDczMzM4Mjk4MzY4.Xk_xzg.48TlS9mui3yx5eyz15ryFn9h_QM',bot=False))
 
 while True:
     try:
