@@ -32,7 +32,7 @@ indianist = timezone('Asia/Kolkata')
 client = discord.Client()
 
 
-bot = Bot(command_prefix=bot_prefix)
+bot = Bot(command_prefix='!')
 bot.remove_command('help')
 
 def getuser():
@@ -46,7 +46,7 @@ def getuser():
 
    
 async def fetch_data(oldata):
-    channel = bot.get_channel(answer_channel_id)
+    channel = bot.get_channel("582841834204823567")
     global counter1,counter2,counter3
     print("Connected With Socket!")
     print("Welcome here! This is an alternative socket of Loco Trivia made by Rounak in Python!")
@@ -160,7 +160,7 @@ async def live_handling():
     while not client.is_logged_in:
         time.sleep(10)
     while True:
-        response_data = requests.get("http://api.getloconow.com/v1/contests/",headers={'Authorization': f"Bearer {loco_bearer_token}"}).json()
+        response_data = requests.get("http://api.getloconow.com/v1/contests/",headers={'Authorization': f"Bearer {'qoTcoPOJeKDodByP3ntHGbK6ucarb6'}"}).json()
         if "invalid_grant" in response_data:
             print("Bearer token is not Valid!!")
             break
@@ -176,8 +176,8 @@ async def live_handling():
 
 loop = asyncio.get_event_loop()
 
-loop.create_task(bot.start(bot_token))
-loop.create_task(client.start(self_token,bot=False))
+loop.create_task(bot.start("NjgwNDMwMTM2NzA4ODI1MTUx.XlVNPw.SLpc_DzD-FqLb1q0itpzhd2aibM"))
+loop.create_task(client.start('NDg3MjcwMDczMzM4Mjk4MzY4.SZVGizEac0YxvADxRqqKg6Ua_XQ',bot=False))
 
 while True:
     try:
